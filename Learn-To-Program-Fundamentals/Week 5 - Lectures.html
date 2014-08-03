@@ -1,0 +1,749 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Week 5 - Lectures</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Week 5</h1>
+<h2>Video 1: <code>while</code> loops</h2>
+<p>The general form of a <code>while</code> loop:</p>
+<pre><code>while expression:
+    statements
+</code></pre>
+
+<p>The <code>while</code> condition, <code>num &lt; 100</code>, is evaluated, and if it is <code>True</code> the statements in the loop body are executed. The loop condition is rechecked and if found to be <code>True</code>, the body executes again. This continues until the loop condition is checked and is <code>False</code>. For example:</p>
+<pre><code>&gt;&gt;&gt; num = 2
+&gt;&gt;&gt; while num &lt; 100:
+        num = num * 2
+        print(num)
+4
+8
+16
+32
+64
+128
+</code></pre>
+
+<p>In the example above, there are 6 <em>iterations</em>: the loop body executes 6 times.</p>
+<h3>Loops Conditions and Lazy Evaluation</h3>
+<p><strong>The problem:</strong> print the characters of <code>str s</code>, up to the first vowel in <code>s</code>.</p>
+<p>The first attempt at solving this problem works nicely when s contains one or more vowel, but results in an error if there are no vowels in s:</p>
+<pre><code>&gt;&gt;&gt; i = 0
+&gt;&gt;&gt; s = 'xyz'
+&gt;&gt;&gt; while not (s[i] in 'aeiouAEIOU'):
+        print(s[i])
+        i = i + 1
+
+x
+y   
+z
+Traceback (most recent call last):
+    File &quot;&lt;pyshell#73&gt;&quot;, line 1, in &lt;module&gt;
+    while not (s[i] in 'aeiouAEIOU'):
+IndexError: string index out of range
+</code></pre>
+
+<p>In the code above, the error occurs when <code>s</code> is indexed at <code>i</code> and <code>i</code> is outside of the range of valid indices. To prevent this <code>error</code>, add an additional condition is added to ensure that <code>i</code> is within the range of valid indices for <code>s</code>:</p>
+<pre><code>&gt;&gt;&gt; i = 0
+&gt;&gt;&gt; s = 'xyz'
+&gt;&gt;&gt; while i &lt; len(s) and not (s[i] in 'aeiouAEIOU'):
+        print(s[i])
+        i = i + 1
+
+x
+y
+z
+</code></pre>
+
+<p>Because Python evaluates the and using lazy evaluation, if the first operand is <code>False</code>, then the expression evaluates to False and the second operand is not even evaluated. That prevents the <code>IndexError</code> from occurring.</p>
+<h3>Optional Book Reading</h3>
+<p>Chapter 9.6 Looping Until a Condition Is Reached</p>
+<h3>LECTURE CODE</h3>
+<pre><code>def get_answer(prompt):
+    ''' (str) -&gt; str
+
+    Use prompt to ask the user for a &quot;yes&quot; or &quot;no&quot;
+    answer and continue asking until the user gives
+    a valid response. Return the answer.
+    '''
+
+    answer = input(prompt)
+
+    while not (answer == 'yes' or answer == 'no'):
+        answer = input(prompt)
+
+    return answer
+
+def up_to_vowel(s):
+    ''' (str) -&gt; str
+
+    Return a substring of s from index 0 up to but
+    not including the first vowel in s.
+
+    &gt;&gt;&gt; up_to_vowel('hello')
+    'h'
+    &gt;&gt;&gt; up_to_vowel('there')
+    'th'
+    &gt;&gt;&gt; up_to_vowel('cs')
+    'cs'
+    '''
+
+    before_vowel = ''
+    i = 0
+
+    while i &lt; len(s) and not (s[i] in 'aeiouAEIOU'):
+        before_vowel = before_vowel + s[i]
+        i = i + 1
+
+    return before_vowel 
+</code></pre>
+
+<h2>Video 2: Comments</h2>
+<h3>The Why and How of Comments</h3>
+<p>As your programs get longer and more complicated, some additional English explanation can be used to help you and other programmers read your code. These explanations called <em>comments</em> document your code, much the way docstrings document your functions.</p>
+<p>A comment begins with the number sign character (#) and goes until the end of the line. One name for this character is the hash character. Python ignores any lines that start with this character.</p>
+<p>Comments are intended for programmers to read, and are usually there to explain the purpose of a function, as well as to describe relationships between your variables. Comments are to help you, and anyone else who is reading/using your code, to remember or understand the purpose of a given variable or function in a program.</p>
+<h3>Optional Book Reading</h3>
+<p>Chapter 2.7 Describing Code</p>
+<h2>Video 3: Type <code>list</code></h2>
+<h3>Overview</h3>
+<p>Our programs will often work with collections of data. One way to store these collections of data is using Python's type <code>list</code>.</p>
+<p>The general form of a list is:</p>
+<pre><code>[expr1, expr2, ..., exprN]
+</code></pre>
+
+<p>For example, here is a list of three grades:</p>
+<pre><code>grades = [80, 90, 70]
+</code></pre>
+
+<h3>List Operations</h3>
+<p>Like strings, lists can be indexed:</p>
+<pre><code>&gt;&gt;&gt; grades[0]
+80
+&gt;&gt;&gt; grades[1]
+90
+&gt;&gt;&gt; grades[2]
+70
+</code></pre>
+
+<p>Lists can also be sliced, using the same notation as for strings:</p>
+<pre><code>&gt;&gt;&gt; grades[0:2]
+[80, 90]
+</code></pre>
+
+<p>The in operator can also be applied to check whether a value is an item in a list.</p>
+<pre><code>&gt;&gt;&gt; 90 in grades
+True
+&gt;&gt;&gt; 60 in grades
+False
+</code></pre>
+
+<p>Several of Python's built-in functions can be applied to lists, including:
+* <code>len(list):</code> return the length of <code>list</code>.
+* <code>min(list):</code> return the smallest element in <code>list</code>.
+* <code>max(list):</code> return the largest element in <code>list</code>.
+* <code>sum(list):</code> return the sum of elements of <code>list</code> (where list items must be numeric).</p>
+<p>For example, here are some calls to those built-in functions:</p>
+<pre><code>&gt;&gt;&gt; len(grades)
+3
+&gt;&gt;&gt; min(grades)
+70
+&gt;&gt;&gt; max(grades)
+90
+&gt;&gt;&gt; sum(grades)
+240
+</code></pre>
+
+<h3>Types of list elements</h3>
+<p>Lists elements may be of any type. For example, here is a <code>list of str</code>:</p>
+<pre><code>subjects = ['bio', 'cs', 'math', 'history']
+</code></pre>
+
+<p>Lists can also contain elements of more than one type. For example, a street address can be represented by a <code>list of [int, str]</code>:</p>
+<pre><code>street_address = [10, 'Main Street']
+</code></pre>
+
+<h3><code>for</code> loops over <code>list</code></h3>
+<p>Similar to looping over the characters of a string, it is possible to iterate over the elements of a list. For example:</p>
+<pre><code>&gt;&gt;&gt; for grade in grades:
+    print(grade)
+80
+90
+70
+</code></pre>
+
+<p>The general form of a for loop over a <code>list</code> is:</p>
+<pre><code>for variable in list:
+    body
+</code></pre>
+
+<h3>Optional Book Reading</h3>
+<p>Chapter 8.1 Storing and Accessing Data in Lists<br />
+Chapter 8.3 Operations on Lists<br />
+Chapter 8.4 Slicing Lists  </p>
+<h3>LECTURE CODE</h3>
+<pre><code>Python 3.2.3 (v3.2.3:3d0686d90f55, Apr 10 2012, 11:25:50) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license()&quot; for more information.
+&gt;&gt;&gt; grades = [80, 90, 70]
+&gt;&gt;&gt; grades[0]
+80
+&gt;&gt;&gt; grades[1]
+90
+&gt;&gt;&gt; grades[2]
+70
+&gt;&gt;&gt; grades[1:2]
+[90]
+&gt;&gt;&gt; grades[0:2]
+[80, 90]
+&gt;&gt;&gt; 90 in grades
+True
+&gt;&gt;&gt; 60 in grades
+False
+&gt;&gt;&gt; len(grades)
+3
+&gt;&gt;&gt; min(grades)
+70
+&gt;&gt;&gt; max(grades)
+90
+&gt;&gt;&gt; sum(grades)
+240
+&gt;&gt;&gt; subjects = ['bio', 'cs', 'math', 'history']
+&gt;&gt;&gt; len(subjects)
+4
+&gt;&gt;&gt; min(subjects)
+'bio'
+&gt;&gt;&gt; max(subjects)
+'math'
+&gt;&gt;&gt; sum(subjects)
+Traceback (most recent call last):
+  File &quot;&lt;pyshell#16&gt;&quot;, line 1, in &lt;module&gt;
+sum(subjects)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+&gt;&gt;&gt; street_address = [10, 'Main Street']
+&gt;&gt;&gt; for grade in grades:
+    print(grade)
+
+
+80
+90
+70
+&gt;&gt;&gt; for item in subjects:
+    print(item)
+
+
+bio
+cs
+math
+history
+&gt;&gt;&gt; @
+</code></pre>
+
+<h2>Video 4: <code>list</code> Methods</h2>
+<h3>Methods</h3>
+<p>A method is a function inside an object. You can find out the methods in type <code>list</code> by typing <code>dir(list).</code></p>
+<h3>Modifying Lists</h3>
+<p>The table below contains methods that modify lists.</p>
+<table>
+<thead>
+<tr>
+	<th>Method</th>
+	<th>Description</th>
+	<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>list.append(object)</td>
+	<td>Append object to the end of list.</td>
+	<td>&gt;&gt;&gt; colours = ['yellow', 'blue'] <br /> &gt;&gt;&gt; colours.append('red') <br /> &gt;&gt;&gt; print(colours) <br /> ['yellow', 'blue', 'red']</td>
+</tr>
+<tr>
+	<td>list.extend(list)</td>
+	<td>Append the items in the list parameter to the list.</td>
+	<td>&gt;&gt;&gt; colours.extend (['pink', 'green']) <br /> &gt;&gt;&gt; print(colours) <br /> ['yellow', 'blue', 'red', 'pink', 'green']</td>
+</tr>
+<tr>
+	<td>list.pop([index])</td>
+	<td>Remove the item at the end of the list; optional index to remove from anywhere.</td>
+	<td>&gt;&gt;&gt; colours.pop() <br /> 'green' <br /> &gt;&gt;&gt; print(colours) <br /> ['yellow', 'blue', 'red', 'pink'] <br /> &gt;&gt;&gt; colours.pop(2) <br /> 'red' <br /> &gt;&gt;&gt; print(colours) <br /> ['yellow', 'blue', 'pink']</td>
+</tr>
+<tr>
+	<td>list.remove(object)</td>
+	<td>Remove the first occurrence of the object; error if not there.</td>
+	<td>&gt;&gt;&gt; colours.remove('green') <br /> Traceback (most recent call last): <br />   	&nbsp;&nbsp;&nbsp;&nbsp;File &quot;&lt;pyshell#10&gt;&quot;, line 1, in <module> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colours.remove('green') <br /> ValueError: list.remove(x): x not in list <br /> &gt;&gt;&gt; colours.remove('pink') <br /> &gt;&gt;&gt; print(colours) <br /> ['yellow', 'blue']</td>
+</tr>
+<tr>
+	<td>list.reverse()</td>
+	<td>Reverse the list.</td>
+	<td>&gt;&gt;&gt; grades = [95, 65, 75, 85] <br /> &gt;&gt;&gt; grades.reverse() <br /> &gt;&gt;&gt; print(grades) <br /> [85, 75, 65, 95] <br /></td>
+</tr>
+<tr>
+	<td>list.sort()</td>
+	<td>Sort the list from smallest to largest.</td>
+	<td>&gt;&gt;&gt; grades.sort() <br /> &gt;&gt;&gt; print(grades) <br /> [65, 75, 85, 95]</td>
+</tr>
+<tr>
+	<td>list.insert(int, object)</td>
+	<td>Insert object at the given index, moving items to make room.</td>
+	<td>&gt;&gt;&gt; grades.insert(2, 80) <br /> &gt;&gt;&gt; print(grades) <br /> [65, 75, 80, 85, 95]</td>
+</tr>
+</tbody>
+</table>
+<h3>Getting Information from Lists</h3>
+<p>The table below contains methods that return information about lists.</p>
+<table>
+<thead>
+<tr>
+	<th>Method</th>
+	<th>Description</th>
+	<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>list.count(object)</td>
+	<td>Return the number of times object occurs in list.</td>
+	<td>&gt;&gt;&gt; letters = ['a', 'a', 'b', 'c'] <br /> &gt;&gt;&gt; letters.count('a') <br /> 2</td>
+</tr>
+<tr>
+	<td>list.index(object)</td>
+	<td>Return the index of the first occurrence of object; error if not there.</td>
+	<td>&gt;&gt;&gt; letters.index('a') <br /> 0 <br /> &gt;&gt;&gt; letters.index('d') <br /> Traceback (most recent call last): <br /> &nbsp;&nbsp;&nbsp;&nbsp;File &quot;&lt;pyshell#24&gt;&quot;, line 1, in <module> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letters.index('d') <br /> ValueError: 'd' is not in list</td>
+</tr>
+</tbody>
+</table>
+<h3>Optional Book Reading</h3>
+<p>Chapter 2.7 Describing Code</p>
+<h3>LECTURE NOTES</h3>
+<pre><code>Python 3.2.3 (v3.2.3:3d0686d90f55, Apr 10 2012, 11:25:50) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license()&quot; for more information.
+&gt;&gt;&gt; dir(list)
+['__add__', '__class__', '__contains__', '__delattr__',
+ '__delitem__', '__doc__', '__eq__', '__format__', '__ge__',
+ '__getattribute__', '__getitem__', '__gt__', '__hash__',
+ '__iadd__', '__imul__', '__init__', '__iter__', '__le__',
+ '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__',
+ '__reduce_ex__', '__repr__', '__reversed__', '__rmul__',
+ '__setattr__', '__setitem__', '__sizeof__', '__str__',
+ '__subclasshook__', 'append', 'count', 'extend', 'index',
+ 'insert', 'pop', 'remove', 'reverse', 'sort']
+&gt;&gt;&gt; colours = []
+&gt;&gt;&gt; prompt = 'Enter another one of your favourite colours (type return to end): '
+&gt;&gt;&gt; 
+&gt;&gt;&gt; colour = input(prompt)
+Enter another one of your favourite colours (type return to end): blue
+&gt;&gt;&gt; colour
+'blue'
+&gt;&gt;&gt; colours
+[]
+&gt;&gt;&gt; while colour != '':
+    colours.append(colour)
+    colour = input(prompt)
+
+
+Enter another one of your favourite colours (type return to end): yellow
+Enter another one of your favourite colours (type return to end): brown
+Enter another one of your favourite colours (type return to end): 
+&gt;&gt;&gt; colours
+['blue', 'yellow', 'brown']
+&gt;&gt;&gt; colours.extend(['hot pink', 'neon green'])
+&gt;&gt;&gt; colours
+['blue', 'yellow', 'brown', 'hot pink', 'neon green']
+&gt;&gt;&gt; colours.pop()
+'neon green'
+&gt;&gt;&gt; colours
+['blue', 'yellow', 'brown', 'hot pink']
+&gt;&gt;&gt; colours.pop(2)
+'brown'
+&gt;&gt;&gt; colours
+['blue', 'yellow', 'hot pink']
+&gt;&gt;&gt; colours.remove('black')
+Traceback (most recent call last):
+  File &quot;&lt;pyshell#18&gt;&quot;, line 1, in &lt;module&gt;
+colours.remove('black')
+ValueError: list.remove(x): x not in list
+&gt;&gt;&gt; if colours.count('yellow') &gt; 0:
+    colours.remove('yellow')
+
+
+&gt;&gt;&gt; colours
+['blue', 'hot pink']
+&gt;&gt;&gt; if 'yellow' in colours:
+    colours.remove('yellow')
+
+
+&gt;&gt;&gt; colours
+['blue', 'hot pink']
+&gt;&gt;&gt; colours.extend('auburn', 'taupe', 'magenta')
+Traceback (most recent call last):
+  File &quot;&lt;pyshell#27&gt;&quot;, line 1, in &lt;module&gt;
+colours.extend('auburn', 'taupe', 'magenta')
+TypeError: extend() takes exactly one argument (3 given)
+&gt;&gt;&gt; colours.extend(['auburn', 'taupe', 'magenta'])
+&gt;&gt;&gt; colours
+['blue', 'hot pink', 'auburn', 'taupe', 'magenta']
+&gt;&gt;&gt; colours.sort()
+&gt;&gt;&gt; colours
+['auburn', 'blue', 'hot pink', 'magenta', 'taupe']
+&gt;&gt;&gt; colours.reverse()
+&gt;&gt;&gt; colours
+['taupe', 'magenta', 'hot pink', 'blue', 'auburn']
+&gt;&gt;&gt; colours.insert(-2, 'brown')
+&gt;&gt;&gt; colours
+['taupe', 'magenta', 'hot pink', 'brown', 'blue', 'auburn']
+&gt;&gt;&gt; colours.index('neon green')
+Traceback (most recent call last):
+  File &quot;&lt;pyshell#36&gt;&quot;, line 1, in &lt;module&gt;
+colours.index('neon green')
+ValueError: 'neon green' is not in list
+&gt;&gt;&gt; if 'hot pink' in colours:
+    where = colours.index('hot pink')
+    colours.pop(where)
+
+
+'hot pink'
+&gt;&gt;&gt; colours
+['taupe', 'magenta', 'brown', 'blue', 'auburn']
+&gt;&gt;&gt; 
+</code></pre>
+
+<h2>Video 5: Mutability and Aliasing</h2>
+<h3>Mutability</h3>
+<p>We say that lists are <em>mutable</em>: they can be modified. All the other types we have seen so far (<code>str, int, float</code> and <code>bool</code>) are <em>immutable</em>: they cannot be modified.</p>
+<p>Here are several examples of lists being modified:</p>
+<pre><code>&gt;&gt;&gt; classes = ['chem', 'bio', 'cs', 'eng']
+&gt;&gt;&gt;
+&gt;&gt;&gt; # Elements can be added:
+&gt;&gt;&gt; classes.append('math')
+&gt;&gt;&gt; classes
+['chem', 'bio', 'cs', 'eng', 'math']
+&gt;&gt;&gt;
+&gt;&gt;&gt; # Elements can be replaced:
+&gt;&gt;&gt; classes[1] = 'soc'
+&gt;&gt;&gt; classes
+['chem', 'soc', 'cs', 'eng', 'math']
+&gt;&gt;&gt;
+&gt;&gt;&gt; # Elements can be removed:
+&gt;&gt;&gt; classes.pop()
+'math'
+&gt;&gt;&gt; classes
+['chem', 'soc', 'cs', 'eng']
+</code></pre>
+
+<h3>Aliasing</h3>
+<p>Consider the following code:</p>
+<pre><code>&gt;&gt;&gt; lst1 = [11, 12, 13, 14, 15, 16, 17]
+&gt;&gt;&gt; lst2 = lst1
+&gt;&gt;&gt; lst1[-1] = 18
+&gt;&gt;&gt; lst2
+11, 12, 13, 14, 15, 16, 18]
+</code></pre>
+
+<p>After the second statement executes, <code>lst1</code> and <code>lst2</code> both refer to the same list. When two variables refer to the same objects, they are <em>aliases</em>. If that list is modified, both of <code>lst1</code> and <code>lst2</code> will see the change.</p>
+<h3>Optional reading</h3>
+<p>Chapter 8.5 Aliasing: What’s in a Name?</p>
+<h2>Video 6: Range</h2>
+<h3>The Built-in Function: Range</h3>
+<p>Python has a built-in function called <code>range</code> that is useful to use when you want to generate a sequence of numbers. You can type <code>help(range)</code> in IDLE if you ever need a reminder.</p>
+<p>The example below will print the integers 0 to 9, inclusive.</p>
+<pre><code>for i in range(10):
+    print (i)
+</code></pre>
+
+<p>The form of <code>range</code> is:</p>
+<pre><code>range([start,] stop[, step]):
+    return a virtual sequence of numbers from start to stop by step
+</code></pre>
+
+<h3>Applications of Range</h3>
+<p>There are other options you can specify to <code>range</code>. One option is to let range generate the numbers corresponding to indices of a string or a list.</p>
+<pre><code>s = 'computer science'
+for i in range(len(s)):
+    print(i)
+</code></pre>
+
+<p>You can also tell <code>range</code> what index to start at. For instance, the example below starts at index 1 (as opposed to the default which is 0).</p>
+<pre><code>for i in range(1, len(s)):
+    print(i)
+</code></pre>
+
+<p>You can even specify the &quot;step&quot; for <code>range</code>. The default stepping size is 1, which means that numbers increment by 1. The example below starts at index 1 and its step size is there (goes to every third index).</p>
+<pre><code>for i in range(1, len(s), 3):
+    print(i)
+</code></pre>
+
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

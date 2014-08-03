@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Week 4 - Lectures</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Week4</h1>
+<h2>Video 1:More str Operators</h2>
+<h3>String Comparisons</h3>
+<p>The equality and inequlity operators can be applied to strings:</p>
+<pre><code>&gt;&gt;&gt; 'a' == 'a'
+True    
+&gt;&gt;&gt; 'ant' == 'ace'
+False
+&gt;&gt;&gt; 'a' == 'b'
+False
+&gt;&gt;&gt; 'a' != 'b'
+True
+</code></pre>
+
+<p>We can compare two strings for their dictionary order, comparing them letter by letter:</p>
+<pre><code>&gt;&gt;&gt; 'abracadabra' &lt; 'ace'
+True
+&gt;&gt;&gt; 'abracadabra' &gt; 'ace'
+False
+&gt;&gt;&gt; 'a' &lt;= 'a'
+True
+&gt;&gt;&gt; 'A' &lt; 'B'
+True
+</code></pre>
+
+<p>Capitalization matters, and capital letters are less than lowercase letters:</p>
+<pre><code>&gt;&gt;&gt; 'a' != 'A'
+True
+&gt;&gt;&gt; 'a' &lt; 'A'
+False
+Every letter can be compared:
+&gt;&gt;&gt; ',' &lt; '3'
+True
+</code></pre>
+
+<p>We can compare a string and an integer for equality:</p>
+<pre><code>&gt;&gt;&gt; 's' == 3
+False
+</code></pre>
+
+<p>We can't compare values of two different types for ordering:</p>
+<pre><code>&gt;&gt;&gt; 's' &lt;= 3
+Traceback (most recent call last):
+    File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;&gt;
+TypeError: unorderable types: str() &lt;= int()
+</code></pre>
+
+<h3>Testing For Substrings</h3>
+<p>The operator <code>in</code> checks whether a string appears anywhere inside another one (that is, whether a string is a substring of another).</p>
+<pre><code>&gt;&gt;&gt; 'c' in 'aeiou'
+False
+&gt;&gt;&gt; 'cad' in 'abracadabra'
+True
+&gt;&gt;&gt; 'zoo' in 'ooze'
+False
+</code></pre>
+
+<h3>String length: function <code>len</code></h3>
+<p>The builtin function len returns the number of characters in a string:</p>
+<pre><code>&gt;&gt;&gt; len('')
+0
+&gt;&gt;&gt; len('abracadabra')
+11
+&gt;&gt;&gt; len('Bwa' + 'ha' * 10)
+23
+</code></pre>
+
+<h3>Summary</h3>
+<table>
+<thead>
+<tr>
+	<th>Description</th>
+	<th>Operator</th>
+	<th>Example</th>
+	<th>Result of example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>equality</td>
+	<td>==</td>
+	<td>'cat' == 'cat'</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>inequality</td>
+	<td>!=</td>
+	<td>'cat' != 'Cat'</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>less than</td>
+	<td>&lt;</td>
+	<td>'A' &lt; 'a'</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>greater than</td>
+	<td>&gt;</td>
+	<td>'a' &gt; 'A'</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>less than or equal</td>
+	<td>&lt;=</td>
+	<td>'a' &lt;= 'a'</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>greater than or equal</td>
+	<td>&gt;=</td>
+	<td>'a' &gt;= 'A'</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>contains</td>
+	<td>in</td>
+	<td>'cad' in 'abracadabra'</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>length of str s</td>
+	<td>len(s)</td>
+	<td>len(&quot;abc&quot;)</td>
+	<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3>Optional Book Reading</h3>
+<p>Chapter 5.1 A Boolean Type</p>
+<h2>Vieo 2: <code>str</code>: indexing and slicing</h2>
+<h3>Indexing</h3>
+<p>An index is a position within the string. Positive indices count from the left-hand side with the first character at index 0, the second at index 1, and so on. Negative indices count from the right-hand side with the last character at index -1, the second last at index -2, and so on. For the string <code>&quot;Learn to Program&quot;</code>, the indices are:</p>
+<p><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/Week%204.%20video%202.png" /></p>
+<p>The first character of the string is at index 0 and can be accessed using this bracket notation:</p>
+<pre><code>&gt;&gt;&gt; s[0]
+'L'
+&gt;&gt;&gt; s[1]
+'e'
+</code></pre>
+
+<p>Negative indices are used to count from the end (from the right-hand side):</p>
+<pre><code>&gt;&gt;&gt; s[-1]
+'m'
+&gt;&gt;&gt; s[-2]
+'a'
+</code></pre>
+
+<h3>Slicing</h3>
+<p>We can extract more than one character using slicing. A slice is a substring from the start index up to but not including the end index. For example:</p>
+<pre><code>&gt;&gt;&gt; s[0:5]
+'Learn'
+&gt;&gt;&gt; s[6:8]
+'to'
+&gt;&gt;&gt; s[9:16]
+'Program'
+</code></pre>
+
+<p>More generally, the end of the string can be represented using its length:</p>
+<pre><code>&gt;&gt;&gt; s[9:len(s)]
+'Program'
+</code></pre>
+
+<p>The end index may be omitted entirely and the default is len(s):</p>
+<pre><code>&gt;&gt;&gt; s[9:]
+'Program'
+</code></pre>
+
+<p>Similarly, if the start index is omitted, the slice starts from index 0:</p>
+<pre><code>&gt;&gt;&gt; s[:]
+'Learn to Program'
+&gt;&gt;&gt; s[:8]
+'Learn to'
+</code></pre>
+
+<p>Negative indices can be used for slicing too. The following three expressions are equivalent:</p>
+<pre><code>&gt;&gt;&gt; s[1:8]
+'earn to'
+&gt;&gt;&gt; s[1:-8]
+'earn to'
+&gt;&gt;&gt; s[-15:-8]
+'earn to'
+</code></pre>
+
+<h3>Modifying Strings</h3>
+<p>The slicing and indexing operations do not modify the string that they act on, so the string that <code>s</code> refers to is unchanged by the operations above. In fact, we cannot change a string. Operations like the following result in errors:</p>
+<pre><code>&gt;&gt;&gt; s[6] = 'd'
+Traceback (most recent call last):
+    File &lt;&quot;pyshell#19&quot;, line 1, in &lt;module&gt;
+            s[6] = 'd'
+TypeError: 'str' object does not support item assignment
+</code></pre>
+
+<p>Imagine that we want to change string s to refer to <code>'Learned to Program'</code>. The following expression evaluates to that <code>'Learned to Program': s[:5] + 'ed' + s[5:]</code></p>
+<p>Variable <code>s</code> gets the new string: <code>s = s[:5] + 'ed' + s[5:]</code></p>
+<p>Notice that the string that <code>s</code> originally referred to was not modified: strings cannot be modified. Instead a new string was created and <code>s</code> was changed to point to that string.</p>
+<h2>Video 3: <code>str</code> Methods: Functions Inside Objects</h2>
+<h3>Methods</h3>
+<p>A <em>method</em> is a function inside of an object.</p>
+<p>The general form of a method call is:</p>
+<p><code>object.method(arguments)</code></p>
+<h3>String Methods</h3>
+<p>Consider the code:</p>
+<pre><code>&gt;&gt;&gt; white_rabbit = &quot;I'm late! I'm late! For a very important date!&quot;
+</code></pre>
+
+<p>To find out which methods are inside strings, use the function dir:</p>
+<pre><code>&gt;&gt;&gt; dir(white_rabbit)
+['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__',
+'__ge__', '__getattribute__','__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__',
+'__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__',
+'__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__',
+'__subclasshook__', 'capitalize', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find',
+'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier',
+'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower',
+'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit',
+'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper',
+'zfill']
+</code></pre>
+
+<p>Passing <code>str</code> as an argument to <code>dir</code> gets the same result:</p>
+<pre><code>&gt;&gt;&gt; dir(str)
+</code></pre>
+
+<p>For many of the string methods, a new string is returned. Since strings are immutable, the original string is unchanged. For example, a lowercase version of the str that white_rabbit refers to is returned when the method lower is called:</p>
+<pre><code>&gt;&gt;&gt; white_rabbit.lower()
+&gt;&gt;&gt; &quot;i'm late! i'm late! for a very important date!&quot;
+&gt;&gt;&gt; white_rabbit
+&gt;&gt;&gt; &quot;I'm late! I'm late! For a very important date!&quot;
+</code></pre>
+
+<p>To get information about a method, such as the <code>lower</code> method, do the following:</p>
+<pre><code>&gt;&gt;&gt; help(str.lower)
+</code></pre>
+
+<h3>Optional Book Reading</h3>
+<p>Chapter 7.1 Modules, Classes, and Methods<br />
+Chapter 7.2 Calling Methods the Object-Oriented Way<br />
+Chapter 7.3 Exploring String Methods</p>
+<h2>Video 4: <code>for</code> loop over <code>str</code></h2>
+<h3>For Loops</h3>
+<p>The general form of a for loop over a string is:</p>
+<pre><code>for variable in str:
+    body
+</code></pre>
+
+<p>The variable refers to each character of the string in turn and executes the body of the loop for each character. For example:</p>
+<pre><code>&gt;&gt;&gt; s = 'yesterday'
+&gt;&gt;&gt; for char in s:
+...     print(char)
+... 
+y
+e
+s
+t
+e
+r
+d
+a
+y
+</code></pre>
+
+<h3>Accumulator pattern: numeric accumulator</h3>
+<p>Consider the code below, in which the variable <code>num_vowels</code> is an accumulator:</p>
+<pre><code>def count_vowels(s):
+    &quot;&quot;&quot; (str) -&gt; int
+
+    Return the number of vowels in s. Do not treat letter y as a vowel
+
+    &gt;&gt;&gt; count_vowels('Happy Anniversary!')
+    5
+    &gt;&gt;&gt; count_vowels('xyz')
+    0    
+    &quot;&quot;&quot;
+
+    num_vowels = 0
+
+    for char in s:
+        if char in 'aeiouAEIOU':
+            num_vowels = num_vowels + 1
+
+    return num_vowels
+</code></pre>
+
+<p>The <code>loop</code> in the function above will loop over each character that <code>s</code> refers to, in turn. The body of the loop is executed for each character, and when a character is a vowel, the <code>if</code> condition is <code>True</code> and the value that <code>num_vowel</code>s refers to is increased by one.</p>
+<p>The variable <code>num_vowels</code> is an accumulator, because it accumulates information. It starts out referring to the value <code>0</code> and by the end of the function it refers to the number of vowels in <code>s</code>.</p>
+<h3>Accumulator pattern: string accumulator</h3>
+<p>In the following function, the variable <code>vowels</code> is also an accumulator:</p>
+<pre><code>def collect_vowels(s):
+    &quot;&quot;&quot; (str) -&gt; str
+
+    Return the vowels from s.  Do not treat the letter
+    y as a vowel.
+
+    &gt;&gt;&gt; collect_vowels('Happy Anniversary!')
+    'aAiea'
+    &gt;&gt;&gt; collect_vowels('xyz')
+    ''
+    &quot;&quot;&quot;
+
+    vowels = ''
+
+    for char in s:
+        if char in 'aeiouAEIOU':
+            vowels = vowels + char
+
+    return vowels
+</code></pre>
+
+<p>Variable <code>vowels</code> initially refers to the empty string, but over the course of the function it accumulates the vowels from <code>s</code>.</p>
+<h3>Optional Book Reading</h3>
+<p>Chapter 9.2 Processing Characters in Strings</p>
+<h2>Video 5: IDLE's Debugger</h2>
+<h3>Debug Control</h3>
+<p>The Python Visualizer has limitations: it does not allow import statements, and it stops tracing after 300 steps. IDLE comes with a debugger, which is a tool that works a lot like the visualizer but without the pretty pictures. To run a program in IDLE's debugger, the steps are:</p>
+<ol>
+<li>Make sure the Python Shell window is on top and select Debug-&gt;Debugger. This opens a window called &quot;Debug Control&quot;.</li>
+<li>Check the checkbox for Source.</li>
+<li>Open the Python file where you have saved your program.</li>
+<li>Select Run-&gt;Run Module. This will change the contents of Debug Control.</li>
+</ol>
+<h3>Understanding The Debug Window</h3>
+<p><code>Step</code> is like <code>Forward</code> in the visualizer: it executes the current instruction. We click <code>Step</code> to &quot;step&quot; through the program. The Debug Control window will highlight the current line being executed. It will also show the current variables in the &quot;Locals&quot; pane. The middle pane shows the current stack frames and the current lines of code for each. We can switch back and forth between them to see the variables.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Week 2 - Lectures (added Visualizers, that had broken links on Monday)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/*
+CSS stylesheet is based on killwing's flavored markdown style:
+https://gist.github.com/2937864
+*/
+body{
+    margin: 0 auto;
+    font: 13px/1.231 Helvetica, Arial, sans-serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:link,a:visited{
+ text-decoration:none;
+}
+a:hover{
+ text-decoration:underline;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+    margin-top: 3px;
+}
+
+pre {
+    padding: 0px 4px;
+    max-width: 800px;
+    white-space: pre-wrap;
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+pre code {
+    border: 0px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #40AA53;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #0066CC
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/* table  */
+table {
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}
+td, th{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+/* code syntax highlight.
+Documentation: http://www.mdcharm.com/documentation/code_syntax_highlighting.html#custom_your_own
+ */
+pre .literal,
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+    color: #008000;
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+    color: #0000FF;
+    font-weight: bold
+}
+
+pre .number,
+pre .hexcolor,
+pre .python .decorator,
+pre .ruby .constant {
+    color: #0000FF;
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+    color: #D14
+}
+
+pre .title,
+pre .id {
+    color: #900;
+    font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+    font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+    color: #458;
+    font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+    color: #000080;
+    font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+    color: #008080
+}
+
+pre .regexp {
+    color: #009926
+}
+
+pre .class {
+    color: #458;
+    font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+    color: #990073
+}
+
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+    color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+    color: #999;
+    font-weight: bold
+}
+
+pre .deletion {
+    background: #fdd
+}
+
+pre .addition {
+    background: #dfd
+}
+
+pre .diff .change {
+    background: #0086b3
+}
+
+pre .chunk {
+    color: #aaa
+}
+
+pre .markdown .header {
+    color: #800;
+    font-weight: bold;
+}
+
+pre .markdown .blockquote {
+    color: #888;
+}
+
+pre .markdown .link_label {
+    color: #88F;
+}
+
+pre .markdown .strong {
+    font-weight: bold;
+}
+
+pre .markdown .emphasis {
+    font-style: italic;
+}
+</style>
+<style type="text/css">
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+</style>
+</head>
+<body>
+<h1>Week 2</h1>
+
+<h2>Video 1: Visualizing Assignment Statements</h2>
+
+<p>On the Resources page is a link to a Python Visualizer that follows the model we use to draw pictures of computer memory.</p>
+
+<p>Consider this code:</p>
+
+<pre><code>x = 1
+y = x + 2
+x = 7
+</code></pre>
+
+<p>When we trace this in the visualizer and click button Forward twice, this is the result:</p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-line3.png" target="_blank"><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-line3.png" alt="" style="max-width:100%;"></a></p>
+
+<p>Clicking Forward once more results in this:</p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-line4.png" target="_blank"><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-line4.png" alt="" style="max-width:100%;"></a></p>
+
+<p>Notice that y's value did not change during this step.</p>
+
+<p>Here is a <a href="http://tinyurl.com/mpy3uxn">link to the Python Visualizer</a> containing this code so that you can explore this yourself. <strong>We strongly encourage you to step forward and backward through this program until you understand every step of execution.</strong></p>
+
+<p><a href="http://goo.gl/f7HZCc">Exercise shown in Python Visualizer</a> (Start yourself)</p>
+
+<h2>Video 2: Type str: Strings in Python</h2>
+
+<h3>String Literal</h3>
+
+<p>A <em>string literal</em> is a sequence of characters. In Python, this type is called <code>str</code>. Strings in Python start and end with a single quotes (') or double quotes ("). A string can be made up of letters, numbers, and special characters. For example:</p>
+
+<pre><code>&gt;&gt;&gt; 'hello'
+'hello'
+&gt;&gt;&gt; 'how are you?'
+'how are you?'
+&gt;&gt;&gt; 'short- and long-term'
+short- and long-term
+</code></pre>
+
+<p>If a string begins with a single quote, it must end with a single quote. The same applies to double-quoted strings. You can not mix the type of quotes.</p>
+
+<p>###Escape Sequences###</p>
+
+<p>To include a quote within a string, use an <em>escape character</em> (\) before it. Otherwise Python interprets that quote as the end of a string and an error occurs. For example, the following code results in an error because Python does not expect anything to come after the second quote:</p>
+
+<pre><code>&gt;&gt;&gt; storm_greeting = 'wow, you're dripping wet.'
+SyntaxError: invalid syntax
+</code></pre>
+
+<p>The <em>escape sequence</em> \' indicates that the second quote is simply a quote, not the end of the string:</p>
+
+<pre><code>&gt;&gt;&gt; storm_greeting = 'Wow, you\'re dripping wet.'
+"Wow, you're dripping wet."
+</code></pre>
+
+<p>An alternative approach is to use a double-quoted string when including a a single-quote within it, or vice-versa. Single- and double-quoted strings are equivalent. For example, when we used double-quotes to indicate the beginning and end of the string, the single-quote in <code>you're</code> no longer causes an error:</p>
+
+<pre><code>&gt;&gt;&gt; storm_greeting = "Wow, you're dripping wet."
+"Wow, you're dripping wet."
+</code></pre>
+
+<h3>String Operators</h3>
+
+<table>
+<thead><tr>
+<th><strong>Expression</strong></th>
+<th>Description</th>
+<th>Example</th>
+<th>Output</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>str1 + str2</code></td>
+<td>concatenate <code>str1</code> and <code>str1</code>
+</td>
+<td><code>print('ab' + 'c')</code></td>
+<td><code>abc</code></td>
+</tr>
+<tr>
+<td><code>str1 * int1</code></td>
+<td>concatenate <code>int1</code> copies of <code>str1</code>
+</td>
+<td><code>print('a' * 5)</code></td>
+<td><code>aaaaa</code></td>
+</tr>
+<tr>
+<td><code>int1 * str1</code></td>
+<td>concatenate <code>int1</code> copies of <code>str1</code>
+</td>
+<td><code>print(4 * 'bc')</code></td>
+<td><code>bcbcbcbc</code></td>
+</tr>
+</tbody>
+</table><p>Note: <em>concatenate</em> means to join together</p>
+
+<p>The <code>*</code> and <code>+</code> operands obey by the standard precedence rules when used with strings.</p>
+
+<p>All other mathematical operators and operands result in a <code>TypeError</code>.</p>
+
+<h3>Optional Book Reading</h3>
+
+<p>Chapter 4.1 Creating Strings of Characters<br><br>
+Chapter 4.2 Using Special Characters in Strings</p>
+
+<h2>Video 3: Input/Output and <code>str</code> Formatting</h2>
+
+<h3>Function <code>print</code>
+</h3>
+
+<p>Python has a built-in function named <code>print</code> that displays messages to the user. For example, the following function call displays the string <code>"hello"</code>:</p>
+
+<pre><code>&gt;&gt;&gt; print("hello")
+hello
+</code></pre>
+
+<p>In the output above, notice that <code>hello</code> is displayed without the quotation marks. The quotes are only for Python's internal string formatting and are not seen by the user.</p>
+
+<p>The <code>print</code> function may also be called with a mathematical expression for an argument. Python evaluates the mathematical expression first and then displays the resulting value to the user. For example:</p>
+
+<pre><code>&gt;&gt;&gt; print(3 + 7 - 3)
+7
+</code></pre>
+
+<p>Finally, <code>print</code> can take in more than one argument. Each pair of arguments is separated by a comma and a space is inserted between them when they are displayed. For example:</p>
+
+<pre><code>&gt;&gt;&gt; print("hello", "there")
+hello there
+return vs. print
+</code></pre>
+
+<hr><p><strong>Recall</strong>: The general form of a <code>return</code> statement:<br><br><code>return expression</code></p>
+
+<hr><p>When a <code>return</code> statement executes, the expression is evaluated to produce a memory address.</p>
+
+<ul>
+<li>What is passed back to the caller?<br>
+That memory address is passed back to the caller.<br>
+</li>
+<li>What is displayed?<br>
+Nothing!</li>
+</ul><p>An example of <code>return</code>:</p>
+
+<pre><code>&gt;&gt;&gt; def square_return(num):
+    return num ** 2
+&gt;&gt;&gt; answer_return = square_return(4)  
+&gt;&gt;&gt; answer_return 
+16      
+</code></pre>
+
+<hr><p>The general form of a <code>print</code> function call:</p>
+
+<pre><code>print(arguments)
+</code></pre>
+
+<hr><p>When a <code>print</code> function call is executed, the argument(s) are evaluated to produce memory address(es).</p>
+
+<ul>
+<li>What is passed back to the caller?<br>
+Nothing!<br>
+</li>
+<li>What is displayed?<br>
+The values at those memory address(es) are displayed on the screen.</li>
+</ul><hr><p>An example of <code>print</code>:</p>
+
+<pre><code>&gt;&gt;&gt; def square_print(num):
+    print("The square of num is", num ** 2)
+&gt;&gt;&gt; answer_print = square_print(4)
+The square num is 16
+&gt;&gt;&gt; answer_print
+&gt;&gt;&gt;
+</code></pre>
+
+<h3>Function <code>input</code>
+</h3>
+
+<p>The function <code>input</code> is a built-in function that prompts the user to enter some input. The program waits for the user to enter the input, before executing the subsequent instructions. The value returned from this function is <em>always</em> a string. For example:</p>
+
+<pre><code>&gt;&gt;&gt; input("What is your name? ")
+What is your name? Jen
+'Jen'
+&gt;&gt;&gt; name = input("What is your name? ")
+What is your name? Jen
+&gt;&gt;&gt; name
+'Jen'
+&gt;&gt;&gt; location = input("What is your location? ")
+What is your location? Toronto
+&gt;&gt;&gt; location
+'Toronto'
+&gt;&gt;&gt; print(name, "lives in", location)
+Jen lives in Toronto
+&gt;&gt;&gt; num_coffee = input("How many cups of coffee? ")
+How many cups of coffee? 2
+'2'
+</code></pre>
+
+<h3>Operations on strings</h3>
+
+<table>
+<thead><tr>
+<th>Operation</th>
+<th>Description</th>
+<th>Example</th>
+<th>Output</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>str1 + str2</code></td>
+<td>concatenate <code>str1</code> and <code>str1</code>
+</td>
+<td><code>print('ab' + 'c')</code></td>
+<td><code>abc</code></td>
+</tr>
+<tr>
+<td><code>str1 * int1</code></td>
+<td>concatenate <code>int1</code> copies of <code>str1</code>
+</td>
+<td><code>print('a' * 5)</code></td>
+<td><code>aaaaa</code></td>
+</tr>
+<tr>
+<td><code>int1 * str1</code></td>
+<td>concatenate <code>int1</code> copies of <code>str1</code>
+</td>
+<td><code>print(4 * 'bc')</code></td>
+<td><code>bcbcbcbc</code></td>
+</tr>
+</tbody>
+</table><h3>Triple-quoted strings</h3>
+
+<p>We have used single- and double- quotes to represent strings. The third string format uses triple-quotes and a triple-quoted string cab span multiple lines. For example:</p>
+
+<pre><code>&gt;&gt;&gt; print(''' How
+are 
+you?''')
+How
+are 
+you?
+</code></pre>
+
+<h3>Escape Sequences</h3>
+
+<p>Python has a special character called an <em>escape character</em>: \. When the escape character is used in a string, the character following the escape character is treated differently from normal. The escape character together with the character that follows it is an <em>escape sequence</em>. The table below contains some of Python's commonly used escape sequences.</p>
+
+<table>
+<thead><tr>
+<th>Escape Sequence</th>
+<th>Name</th>
+<th>Example</th>
+<th>Output</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>\n</td>
+<td>newline (ASCII linefeed - LF)</td>
+<td>print('''How <br> are <br> you?''')</td>
+<td>How <br> are <br> you?</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>tab (ASCII horizontal tab - TAB)</td>
+<td>print('3\t4\t5')</td>
+<td>3       4                 5</td>
+</tr>
+<tr>
+<td>\</td>
+<td>backslash (\)</td>
+<td>print('\')</td>
+<td>\</td>
+</tr>
+<tr>
+<td>\'</td>
+<td>single quote (')</td>
+<td>print('don\'t')</td>
+<td>don't</td>
+</tr>
+<tr>
+<td>\"</td>
+<td>double quote (")</td>
+<td>print("He says, \"hi\".")</td>
+<td>He says, "hi".</td>
+</tr>
+</tbody>
+</table><h3>Optional Book Reading</h3>
+
+<p>Chapter 4.3 Creating a Multiline String<br><br>
+Chapter 4.4 Printing Information<br><br>
+Chapter 4.5 Getting Information from the Keyboard  </p>
+
+<h2>Video 4: Docstrings and Function help</h2>
+
+<p>Built-in function <code>help</code> displays the docstring from a function definition. For example, consider this function:</p>
+
+<pre><code>def area(base, height):
+    """(number, number) -&gt; number
+
+Return the area of a triangle with dimensions base
+and height.
+"""
+
+return base * height / 2
+</code></pre>
+
+<p>Calling <code>help</code> on function <code>area</code> produces this output:</p>
+
+<pre><code>&gt;&gt;&gt; help(area)
+Help on function area in module __main__:
+
+area(base, height)
+    (number, number) -&gt; number
+
+    Return the area of a triangle with dimensions base
+    and height.
+</code></pre>
+
+<h3>Optional Book Reading</h3>
+
+<p>3.3 Defining Our Own Functions</p>
+
+<h2>Video 5: Function Design Recipe</h2>
+
+<h3>The Six Steps</h3>
+
+<p><strong>1. Examples</strong></p>
+
+<ul>
+<li>What should your function do?</li>
+<li>Type a couple of example calls.</li>
+<li>Pick a name (often a verb or verb phrase): What is a shor answer to "What does your function do"?</li>
+</ul><p><strong>2. Type Contract</strong></p>
+
+<ul>
+<li>What are the parameter types?</li>
+<li>What type of value is returned?</li>
+</ul><p><strong>3. Header</strong></p>
+
+<ul>
+<li>Pick meaningful parameter names.</li>
+</ul><p><strong>4. Description</strong></p>
+
+<ul>
+<li>Mention every parameter in your description.</li>
+<li>Describe the return value.</li>
+</ul><p><strong>5. Body</strong></p>
+
+<ul>
+<li>Write the body of your function.</li>
+</ul><p><strong>6. Test</strong></p>
+
+<ul>
+<li>Run the examples.</li>
+</ul><h3>Applying the Design Recipe</h3>
+
+<h4>The problem:</h4>
+
+<p>The United States measures temperature in Fahrenheit and Canada measures it in Celsius. When travelling between the two countries it helps to have a conversion function. Write a function that converts from Fahrenheit to Celsius.</p>
+
+<p><strong>1. Examples</strong></p>
+
+<pre><code>&gt;&gt;&gt; convert_to_ccelsius(32)
+0
+&gt;&gt;&gt; convert_to_celsius(212)
+100
+</code></pre>
+
+<p><strong>2. Type Contract</strong></p>
+
+<pre><code>(number) -&gt; number
+</code></pre>
+
+<p><strong>3. Header</strong></p>
+
+<pre><code>def convert_to_celsius(fahrenheit):
+</code></pre>
+
+<p><strong>4. Description</strong></p>
+
+<pre><code>Return the number of Celsius degrees equivalent to fahrenheit degrees.
+</code></pre>
+
+<p><strong>5. Body</strong></p>
+
+<pre><code>    return (fahrenheit - 32) * 5 / 9
+</code></pre>
+
+<p><strong>6. Test</strong></p>
+
+<pre><code> Run the examples.   
+</code></pre>
+
+<h4>Putting it all together:</h4>
+
+<pre><code>def convert_to_celsius(fahrenheit):
+    ''' (number) -&gt; number
+
+    Return the number of Celsius degrees equivalent to fahrenheit degrees.
+
+    &gt;&gt;&gt; convert_to_ccelsius(32)
+    0
+    &gt;&gt;&gt; convert_to_celsius(212)
+    100
+    '''
+
+    return (fahrenheit - 32) * 5 / 9
+</code></pre>
+
+<h4>Optional Book Reading</h4>
+
+<p>Chaper 3.6 Designing New Functions: A Recipe</p>
+
+<h2>Video 6: Function Reuse</h2>
+
+<h3>Calling functions within other function definitions</h3>
+
+<p><strong>The problem:</strong> Calculate the semi-perimeter of a triangle.</p>
+
+<p><strong>The approach:</strong> Function <code>semiperimeter</code> calls function <code>perimeter</code>.</p>
+
+<pre><code>def perimeter(side1, side2, side3):
+    '''(number, number, number) -&gt; number
+
+    Return the perimeter of a triangle with sides of length
+    side1, side2 and side3.
+
+    &gt;&gt;&gt; perimeter(3, 4, 5)
+    12
+    &gt;&gt;&gt; perimeter(10.5, 6, 9.3)
+    25.8
+    '''
+    return side1 + side2 + side3
+
+
+def semiperimeter(side1, side2, side3):
+    '''(number, number, number) -&gt; float
+
+    Return the perimeter of a triangle with sides of
+    length side1, side2 and side3.
+
+    &gt;&gt;&gt; semiperimeter(3, 4, 5)
+    6.0
+    &gt;&gt;&gt; semiperimeter(10.5, 6, 9.3)
+    12.9
+    '''    
+    return perimeter(side1, side2, side3) / 2
+</code></pre>
+
+<h3>Calling functions within other function calls</h3>
+
+<p><strong>The problem:</strong> One triangle has a base of length 3.8 and a height of length 7.0. A second triangle has a base of length 3.5 and a height of length 6.8. Calculate which of two triangles' areas is biggest.</p>
+
+<p><strong>The approach:</strong> Pass calls to function <code>area</code> as arguments to built-in function max.</p>
+
+<pre><code>max(area(3.8, 7.0), area(3.5, 6.8))
+</code></pre>
+
+<h4>Optional Book Reading</h4>
+
+<p>Chaper 3.1 Functions That Python Provides</p>
+
+<h2>Video 7: Visualizing Function Calls</h2>
+
+<p>We can explore how Python manages function calls using the Python Visualizer. (See the Resources page.)</p>
+
+<p>In the example below, function <code>convert_to_seconds</code> contains a call on <code>convert_to_minutes</code>.</p>
+
+<pre><code>def convert_to_minutes(num_hours):
+    '''(int) -&gt; int
+     Return the number of minutes there are in num_hours hours.
+     &gt;&gt;&gt; convert_to_minutes(2)
+        120
+     '''
+    result = num_hours * 60
+    return result
+
+def convert_to_seconds(num_hours):
+    '''(int) -&gt; int
+    Return the number of seconds there are in num_hours hours.
+    &gt;&gt;&gt; convert_to_minutes(2)
+    7200
+    '''
+    return convert_to_minutes(num_hours) * 60
+
+seconds_2 = convert_to_seconds(4)
+</code></pre>
+
+<p>Here is what the memory model looks like just before the return statement inside function <code>convert_to_minutes</code> looks like:</p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-callstack1.png" target="_blank"><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-callstack1.png" alt="" style="max-width:100%;"></a></p>
+
+<p>Note that there are three stack frames on the call stack: the main one, then underneath that a frame for the call on function <code>convert_to_seconds</code>, and underneath that the frame for the call on function <code>convert_to_minutes</code>.</p>
+
+<p>Here is a <a href="http://tinyurl.com/l7hqbwm">link to the Python Visualizer </a> at this stage of the execution so that you can explore this yourself. <strong>We strongly encourage you to step backward and forward through this program until you understand every step of execution.</strong></p>
+
+<p>When the return statement is executed, the call on <code>convert_to_minutes</code> exits. The bottom stack frame is removed, and execution resumes using the stack frame for <code>convert_to_seconds</code>:</p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-callstack2.png" target="_blank"><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/programming1-images-callstack2.png" alt="" style="max-width:100%;"></a></p>
+
+<h3>Optional reading</h3>
+
+<p>3.5 Tracing Function Calls in the Memory Model</p>
+
+<p><a href="http:%5Cgoo.gl/tTrlYM">Exercise shown in Python Visualizer</a> (Start yourself)</p>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

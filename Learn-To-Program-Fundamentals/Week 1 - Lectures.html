@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Week 1 - Lectures</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Week 1 #</h1>
+<h2>Video 2: Getting Started: Installing Python</h2>
+<h3>Programming Languages</h3>
+<p>Programs are found in many places such as on your computer, your cell phone, or on the internet. A program is a set of instructions that are run or executed. There are many programming languages and, for this course, we will use the Python programming language.</p>
+<h4>Optional Book Reading</h4>
+<p>Chapter 1: What's Programming?<br />
+Chapter 2: How does a Computer Run a Python Program?</p>
+<h2>Video 3: Python as a Calculator</h2>
+<h3>Arithmetic Operators</h3>
+<p><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/Python%20as%20a%20Calculator%20-%20Arythmetic%20Operators.png" /></p>
+<h3>Types <em>int</em> and <em>float</em></h3>
+<p>A <em>type</em> is a set of values and operations that can be performed on those values.</p>
+<p>Two of Python's numeric types:</p>
+<ul>
+<li>int: integer<br />
+For example: 3, 4, 894, 0, -3, -18</li>
+<li>float: floating point number (an approximation to a real number)<br />
+For example: 5.6, 7.342, 53452.0, 0.0, -89.34, -9.5</li>
+</ul>
+<p><strong>Arithmetic Operator Precedence</strong></p>
+<p>When multiple operators are combined in a single expression, the operations are evaluated in order of precedence.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/Python%20as%20a%20Calculator%20-%20Arythmetic%20Operators%20Precedence.png" /></p>
+<h3>Syntax and Semantics</h3>
+<p><em>Syntax</em>: the rules that describe valid combinations of Python symbols</p>
+<p><em>Semantics</em>: the meaning of a combination of Python symbols is the meaning of an instruction â€” what a particular combination of symbols does when you execute it.</p>
+<h3>Errors</h3>
+<p>A syntax error occurs when we an instruction with invalid syntax is executed. For example:</p>
+<pre><code>&gt;&gt;&gt; 3) + 2 * 4
+SyntaxError: invalid syntax
+</code></pre>
+
+<p>A semantic error occurs when an instruction with invalid semantics is executed. For example:</p>
+<pre><code>&gt;&gt;&gt; 89.4 / 0
+Traceback (most recent call last):
+    File &quot;&quot;, line 1, in
+        89.4 / 0
+ZeroDivisionError: float division by zero
+</code></pre>
+
+<h2>Video 4: Python and Computer Memory</h2>
+<h3>Computer Memory</h3>
+<p>For the purpose of this course, you may think of <em>computer memory</em> as a long list of storage locations where each location is identified with a unique number and each location houses a value. This unique number is called a memory address. Typically, we will write memory addresses as a number with an &quot;id&quot; as a prefix to distinguish them from other numbers (for example, <strong>id201</strong> is memory address 201).</p>
+<p>Variables are a way to keep track of values stored in computer memory. A variable is a named location in computer memory. Python keeps variables in a separate list from values. A variable will contain a memory address, and that memory address contains the value. The variable then refers to the value. Python will pick the memory addresses for you.</p>
+<h3>Terminology</h3>
+<p>A value <strong>has</strong> a memory address.<br />
+A variable <strong>contains</strong> a memory address.<br />
+A variable <strong>refers</strong> to a value.<br />
+A variable <strong>points</strong> to a value.  </p>
+<p>Example:<br />
+Value 8.5 <strong>has memory address</strong> id34.<br />
+Variable shoe<em>size <strong>contains memory address</strong> id34.<br />
+The <strong>value</strong> of shoe</em>size <strong>is</strong> 8.5.<br />
+shoe<em>size <strong>refers</strong> to value 8.5.<br />
+shoe</em>size <strong>points</strong> to value 8.5.</p>
+<h4>Optional Book Reading</h4>
+<p>Chapter 2.4: Variables and Computer Memory: Remembering Values</p>
+<h2>Video 5: Variables</h2>
+<h3>Assignment statements</h3>
+<p>The general form of an assignment statement:</p>
+<pre><code>variable = expression
+</code></pre>
+
+<p>Example assignment statements:</p>
+<pre><code>&gt;&gt;&gt; base = 20
+&gt;&gt;&gt; height = 12
+&gt;&gt;&gt; area = base * height / 2
+&gt;&gt;&gt; area
+120.0
+</code></pre>
+
+<p>The rules for executing an assignment statement:</p>
+<ol>
+<li>Evaluate the expression. This produces a memory address.</li>
+<li>Store the memory address in the variable.</li>
+</ol>
+<h3>Variable names</h3>
+<p>The rules for legal Python names:</p>
+<ol>
+<li>Names must start with a letter or _.</li>
+<li>Names must contain only letters, digits, and _.</li>
+</ol>
+<p>For Python, in most situations, the convention is to use pothole_case.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/633848/Programming%20Fundamentals/variables%20-%20more%20info%20.png" /></p>
+<h4>Optional Book Reading</h4>
+<p>Chaper 2.4. Variables and Computer Memory: Remembering Values<br />
+Chapter 2.6. A Single Statement That Spans Multiple Lines</p>
+<h2>Video 6: Built-in Functions</h2>
+<h3>Function Call</h3>
+<p>The general form of a function call:</p>
+<pre><code>function_name(arguments)
+</code></pre>
+
+<p>The rules for executing a function call:</p>
+<ol>
+<li>Evaluate the arguments.</li>
+<li>Call the function, passing in the argument values.</li>
+</ol>
+<p>Terminology:</p>
+<ul>
+<li>Argument: a value given to a function</li>
+<li>Pass: to provide to a function</li>
+<li>Call: ask Python to evaluate a function</li>
+<li>Return: pass back a value</li>
+</ul>
+<p>Example function calls:</p>
+<pre><code>&gt;&gt;&gt; abs(-23)
+23
+&gt;&gt;&gt; abs(56.24)
+56.24
+</code></pre>
+
+<h3>Function <em>dir</em></h3>
+<p>Python has a set of built-in functions. To see the list of built-in functions, run dir(__builtins__):</p>
+<p>&gt;&gt;&gt; dir(__builtins__)&lt; br/&gt; ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BufferError', 'BytesWarning', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError', 'None', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', '<em>', '__build</em>class__', '__debug__', '__doc__', '__import__', '__name__', '__package__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']</p>
+<h3>Function help</h3>
+<p>To get information about a particular function, call help and pass the function as the argument. For example:</p>
+<pre><code>&gt;&gt;&gt; help(abs)
+Help on built-in function abs in module builtins:
+abs(...)
+    abs(number) -&gt; number
+
+    Return the absolute value of the argument.
+</code></pre>
+
+<h3>Optional arguments</h3>
+<p>In the description of function pow below, the square brackets around [, z] indicate that the third argument is optional:</p>
+<pre><code>&gt;&gt;&gt; help(pow)
+Help on built-in function pow in module builtins:
+
+pow(...)
+    pow(x, y[, z]) -&gt; number
+
+    With two arguments, equivalent to x\*\*y.  With three arguments, equivalent to (x\*\*y) % z, but may be more efficient (e.g. for longs).
+</code></pre>
+
+<p>Function pow can be called with either two or three arguments:</p>
+<pre><code>&gt;&gt;&gt; pow(2, 5)  
+32
+&gt;&gt;&gt; pow(2, 5, 3)
+2
+</code></pre>
+
+<h4>Optional Book Reading</h4>
+<p>Chaper 3.1. Functions That Python Provides<br />
+Chaper 3.2. Memory Addresses: How Python Keeps Track of Values</p>
+<h2>Video 7: Defining Functions</h2>
+<h3>Function Definitions</h3>
+<p>The general form of a function definition:</p>
+<pre><code>def function_name(parameters):
+    body
+</code></pre>
+
+<ul>
+<li><strong>def</strong>: a keyword indicating a function definition</li>
+<li>function_name: the function name</li>
+<li>
+parameters:
+<ul>
+<li>The parameter(s) of the function, 0 or more and are separated by a comma</li>
+<li>a parameter is a variable whose value will be supplied when the function is called</li>
+</ul>
+</li>
+<li>
+body:
+<ul>
+<li>1 or more statements, often ending with a return statement</li>
+</ul>
+</li>
+</ul>
+<p>Example of a function definition:</p>
+<pre><code>def f(x):
+    return x ** 2
+</code></pre>
+
+<p><strong>return</strong> statement</p>
+<p>The general form of a return statement:</p>
+<pre><code>return expression
+</code></pre>
+
+<p>The rules for executing a <strong>return</strong> statement:</p>
+<ol>
+<li>Evaluate the expression. This produces a memory address.</li>
+<li>Pass back that memory address to the caller. Exit the function.</li>
+</ol>
+<h3>Function Calls</h3>
+<p>Function calls are expressions and the result can be stored in a variable.</p>
+<p>The general form of a function call:</p>
+<pre><code>function_name(arguments)
+</code></pre>
+
+<p>The rules for executing a function call:</p>
+<ol>
+<li>Evaluate the arguments to produce memory addresses.</li>
+<li>Store those memory addresses in the corresponding parameters.</li>
+<li>Execute the body of the function.</li>
+</ol>
+<p>Example of a function definition and function calls:</p>
+<pre><code>&gt;&gt;&gt; def area(base, height):
+return base * height / 2
+&gt;&gt;&gt; area(3, 4)
+6.0
+&gt;&gt;&gt; result = area(10, 7.45)
+&gt;&gt;&gt; result
+37.25
+</code></pre>
+
+<h3>Saving your programs to &quot;.py&quot; files</h3>
+<p>We usually save our Python programs in &quot;.py&quot; files. A file can contain multiple function definitions and other statements. Before calling a function from a &quot;.py&quot; file in the shell in IDLE, you need to first execute Run -&gt; Run Module, or else the shell will not recognize the function call.</p>
+<h4>Optional Book Reading</h4>
+<p>Chaper 3.3. Defining Our Own Functions<br />
+Chaper 3.4. Using Local Variables for Temporary Storage<br />
+Chaper 3.7. Writing and Running a Program</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
