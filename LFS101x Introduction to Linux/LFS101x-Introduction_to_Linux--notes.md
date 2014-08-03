@@ -1,3 +1,8 @@
+shortcuts:
+
+1. CTRL + L => show **current location**. use in graphical file manager
+
+
 # Chapter 1
 ## The Linux Foundations
 
@@ -129,3 +134,32 @@ Meeting @:
 * Both CentOS and Scientific Linux are binary-compatible with RHEL; i.e., binary software packages in most cases will install properly across the distributions.
 
 Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provide long term fee-based support for their distributions, as well as hardware and software certification. All major distributors provide update services for keeping your system primed with the latest security and bug fixes, and performance enhancements, as well as provide online support resources.
+
+# Chapter 3
+## Linux structure and installation
+### Linux filesystem basics
+
+Filesystem determines the storing and organizing of arbitrary collections of data in a human-usable form.
+
+Different Types of Filesystems Supported by Linux:
+*    Conventional disk filesystems: ext2, ext3, ext4, XFS, Btrfs, JFS, NTFS, etc.
+*    Flash storage filesystems: ubifs, JFFS2, YAFFS, etc.
+*    Database filesystems
+*    Special purpose filesystems: procfs, sysfs, tmpfs, debugfs, etc.
+
+#### The Filesystem Hierarchy Standard
+
+Linux systems store their important files according to a standard layout called the [**Filesystem Hierarchy Standard**](https://courses.edx.org/c4x/LinuxFoundationX/LFS101]x/asset/LFS101_Ch3_Sec1_FSH.pdf), or [**FHS**](http://refspecs.linuxfoundation.org/fhs.shtml). This standard ensures that users can move between distributions without having to re-learn how the system is organized.
+
+1. Linux uses the ‘/’ character to separate paths (unlike Windows, which uses ‘\’), and does not have drive letters. 
+2. New drives are mounted as directories in the single filesystem, often under /media
+	* e.g. a CD-ROM disc labeled FEDORA might end up being found at /media/FEDORA
+
+![linux file system](https://dl.dropboxusercontent.com/u/633848/LFS101x/linux_file_system.jpg)
+
+* All Linux filesystem names are **case-sensitive** 
+* distributions distinguish between core utilities needed for proper system operation and other programs, and place the latter in directories under /usr
+
+![](https://dl.dropboxusercontent.com/u/633848/LFS101x/usr_root_structure.jpg)
+
+
