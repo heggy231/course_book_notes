@@ -106,7 +106,7 @@ Meeting @:
 
 ### Linux distributions
 
-![linux kernel](https://dl.dropboxusercontent.com/u/633848/LFS101x/linux_kernel.jpg)
+![linux kernel image](https://dl.dropboxusercontent.com/u/633848/LFS101x/linux_kernel.jpg)
 
 * Linux kernel is the core of a computer OS
 * Linux distribution consists of the kernel + other software tools for 
@@ -137,29 +137,32 @@ Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provi
 
 # Chapter 3
 ## Linux structure and installation
-### Linux filesystem basics
+### Linux file system basics
 
-Filesystem determines the storing and organizing of arbitrary collections of data in a human-usable form.
+File system determines the storing and organizing of arbitrary collections of data in a human-usable form.
 
-Different Types of Filesystems Supported by Linux:
-*    Conventional disk filesystems: ext2, ext3, ext4, XFS, Btrfs, JFS, NTFS, etc.
-*    Flash storage filesystems: ubifs, JFFS2, YAFFS, etc.
-*    Database filesystems
-*    Special purpose filesystems: procfs, sysfs, tmpfs, debugfs, etc.
+Different Types of File systems Supported by Linux:
+*    Conventional disk file systems: ext2, ext3, ext4, XFS, Btrfs, JFS, NTFS, etc.
+*    Flash storage file systems: ubifs, JFFS2, YAFFS, etc.
+*    Database file systems
+*    Special purpose file systems: procfs, sysfs, tmpfs, debugfs, etc.
 
-#### The Filesystem Hierarchy Standard
+#### The File system Hierarchy Standard
 
 Linux systems store their important files according to a standard layout called the [**Filesystem Hierarchy Standard**](https://courses.edx.org/c4x/LinuxFoundationX/LFS101]x/asset/LFS101_Ch3_Sec1_FSH.pdf), or [**FHS**](http://refspecs.linuxfoundation.org/fhs.shtml). This standard ensures that users can move between distributions without having to re-learn how the system is organized.
 
 1. Linux uses the ‘/’ character to separate paths (unlike Windows, which uses ‘\’), and does not have drive letters. 
-2. New drives are mounted as directories in the single filesystem, often under /media
+2. New drives are mounted as directories in the single file system, often under /media
 	* e.g. a CD-ROM disc labeled FEDORA might end up being found at /media/FEDORA
 
-![linux file system](https://dl.dropboxusercontent.com/u/633848/LFS101x/linux_file_system.jpg)
+![linux file system image](https://dl.dropboxusercontent.com/u/633848/LFS101x/linux_file_system.jpg)
 
-* All Linux filesystem names are **case-sensitive** 
+* All Linux file system names are **case-sensitive** 
 * distributions distinguish between core utilities needed for proper system operation and other programs, and place the latter in directories under /usr
 
 ![](https://dl.dropboxusercontent.com/u/633848/LFS101x/usr_root_structure.jpg)
 
+### The Boot Process
+
+![boot process image](https://dl.dropboxusercontent.com/u/633848/LFS101x/boot_process.jpg)
 
