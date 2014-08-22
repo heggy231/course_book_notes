@@ -49,3 +49,47 @@ TO CHANGE A HABIT => CHANGE REACTION TO THE CUE !!!
 2. daily tasks, written day before
     * plan the quitting time
 3. eat your frogs first every day
+
+### Long-term memory
+
+* The movie "Memento"
+* The HM patient cures for epilepsy
+* memories are not fixed
+* different part of the brain works to learn memories and skills
+
+#### Astrocytes are brain cells that
+
+* Provide nutrients to neurons
+* Maintain extracellular (outside the cell) ion balance
+* Are involved in repair after injury
+* Have a role in learning
+
+####  Creating meaningful groups and the memory palace technique
+* Creating connections between things
+* letters, numbers, historie ala HaLina K albo Bubn zjadl cyrkonie i zhaftowa na Dubna
+* create memory palace technique:  imagine yourself walking through a place you know well, and imagine SHOCKING images with the list objects
+
+#### Summery
+
+* long: practice and repeat in spaced times
+* working memory: 4 items !
+* moving from working to long makes space for other things
+* Select the true statements below in relation to memory
+
+* One way to memorize more easily is to create meaningful groups that simplify the material.
+    * Long term memory is like a storage warehouse
+    * Working memory is like a poor blackboard that quickly erases itself.
+    * The funnier and more evocative the images you make related to what you are trying to remember, the better.
+
+####  Interviews
+* Dr. Robert Gamache, an award-winning bilingual scientist
+    * Studying French helped the guy with English
+    * HIS ADVICE: STUDY EVERY SUBJECT EVERY DAY, at least 15 minutes
+* Dr. Norman Fortenberry - Learning at MIT
+    * Again: turn off brain, watch stupid TV, cartoons, ect
+    * use as many different learning input modes as you can
+    * mechanical act of writing helps you learn the material, you learn it once already
+    * discussion with peers to challenge what you know and what you do not
+* Scott Young
+    * have a defined [konkrit] goals
+    * learn more by learning less
